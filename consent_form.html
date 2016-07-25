@@ -1,0 +1,162 @@
+<html>
+<head>
+	<script type='text/javascript'>
+    function validate_yes(field, alerttxt) {
+      with (field) {
+        if (value=="yes" && checked) {
+          return true;
+        } else {
+          alert(alerttxt);
+          field.focus();
+          return false;
+        }
+      }
+    }
+
+    function validate_required(field, alerttxt) {
+      with (field) {
+        if (value==null || value=="") {
+          alert(alerttxt);
+          field.focus();
+          return false;
+        } else {
+          return true;
+        }
+      }
+    }
+
+    function validate_checked(field, alerttxt) {
+      if (field[2].value=="nothing_selected" && field[2].checked) {
+        alert(alerttxt);
+        field[0].focus();
+        return false;
+      } else {
+        return true;
+      }
+    }
+    
+    function check_consent(form) {
+      with (form) {
+        if (!validate_checked(optional_permission_to_use_media, "Please indicate your prefernce for the optional permission section")) return false;
+			  if (!validate_required(firstname, "Please enter your first name")) return false;
+			  if (!validate_required(lastname, "Please enter your last name")) return false;
+			  if (!validate_required(affiliation, "Please enter your affiliation")) return false;
+			  if (!validate_required(email, "Please enter your email address")) return false;
+        if (!validate_yes(is_of_age[0], "To participate in this study, you must be 18 years or older")) return false;
+        if (!validate_yes(understood_info[0], "To participate in this study, you must indicate that you understood the information above")) return false;
+        if (!validate_yes(wants_to_participate[0], "To participate in this study, you must indicate that you want to participate in this research")) return false;
+    
+        return true;
+      }
+    }
+  </script>
+    <style type="text/css">
+<!--
+.style1 {font-size: 16px}
+.style2 {font-size: 18px
+}
+.style3 {font-size: 24px; font-weight: bold; }
+-->
+    </style>
+<title>Online Consent Form - Assistive Robots for Blind Travelers: Human Robot Interaction</title></head>
+
+<body>
+  <table width="750" border="0" align="center">
+    <tr>
+      <td>
+        <h1 align="center" class="style3"><strong>Assistive Robots for Blind Travelers: Human Robot Interaction</strong></h1>
+        <h1 align="center" class="style2">Online Consent Form for Participation in Research</h1>
+        <p>This study is part of a research study conducted by <strong>Dr. M. Bernardine Dias</strong>, Associate  Research Professor in the Robotics Institute at Carnegie Mellon University.  This study is funded by the National Science Foundation National Robotics  Initiative.</p>
+        <p>According to the World Health Organization, over a  billion people worldwide have some form of disability. The number of people  with disabilities is on the rise with a growing elderly population worldwide,  and more disabled war veterans and other trauma survivors. Thus, issues of  accessibility have increasingly important social and economic consequences,  globally. For people with vision or ambulatory disabilities, navigating through  indoor and outdoor spaces can be challenging and often daunting, especially in  emergency situations necessitating evacuation. The ability to independently and  safely travel to and navigate unfamiliar environments is a fundamental  necessity for all in today&rsquo;s globalized world.</p>
+        <p>This research is exploring the use of co-robots in  enhancing the safety and independence of these travelers by assisting them to  navigate unfamiliar urban environments effectively. The data collected from  this study will be used to inform design of new technology tools or enhance  existing solutions.</p>
+<h2 class="style1">Procedures</h2>
+        <p>This study consists of four activities for a total of 60 - 90 minutes and will be conducted at Carnegie Mellon University (CMU).  Activities include meeting one or more robots and learning about its  functionality, physically interacting with one or more robots, and answering  interview questions about your experience. Researchers may contact you with  follow-up questions after the in-lab session.        
+        <p>Researchers may request to do video or audio recording  of activities for research purposes. These video and audio recordings will only  be viewed by investigators in this research study. With optional consent,  researchers may also take photo, video or audio recording of activities with  the participant for promotional purposes. These recordings will be made  available to the public. You can specify whether or not you want to participate  in video, audio and/or video recording for research and/or promotional purposes  on the Optional Permission section of the consent form.</p>
+        <p>Refreshments (e.g. water, snacks, etc.) will be provided  during the study.</p>
+<h2 class="style1">Participant Requirements</h2>
+        <p>Participation in this study is limited  to individuals age 18 and older. Ideal candidates for this study are potential  end users (e.g. blind and visually impaired travelers, wheelchair users,  mobility constraints travelers, etc.) and topic area experts (e.g. Orientation  &amp; Mobility specialists, people who interact with the potential end users,  etc.).</p>
+<h2 class="style1">Risks</h2>
+        <p>The risks and  discomfort associated with participation in this study are no greater than  those ordinarily encountered in daily life or during the performance of routine  physical or psychological examinations or tests. When you are interacting with a robot, an experimenter will  be immediately next to the robot and within quick reach of the emergency stop  button. Note that this situation is unlikely since the robots we will be using  are designed for safe and close interaction with people. </p>
+<h2 class="style1">Benefits</h2>
+        <p>There may be no personal benefit from your participation  in the study but the knowledge received may be of value to humanity. </p>
+<h2 class="style1">Compensation & Costs</h2>
+        <p>There is no compensation for participation in this study  and there will be no cost  to you if you participate in this study. </p>
+<h2 class="style1">Confidentiality</h2>
+        <p>By participating in this research, you  understand and agree that Carnegie Mellon may be required to disclose your  consent form, data and other personally identifiable information as required by  law, regulation, subpoena or court order. Otherwise, your confidentiality will be maintained in the following  manner:</p>
+        <p>Your data and consent form will be kept  separate. Your consent form will be stored in a locked location on Carnegie  Mellon property and will not be disclosed to third parties. By participating,  you understand and agree that the data and information gathered during this  study may be used by Carnegie Mellon and published and/or disclosed by Carnegie  Mellon to others outside of Carnegie Mellon. However, your name, address, contact information and other direct  personal identifiers in your consent form will not be mentioned in any such  publication or dissemination of the research data and/or results by Carnegie  Mellon. </p>
+        <p>The researchers will take the following  steps to protect participants&rsquo; identities during this study: (1) Each  participant will be assigned a number; (2) The researchers will record any data  collected during the study by number, not by name; (3) Any original recordings  or data files will be stored in a secured location accessed only by authorized  researchers. For online consent forms, e-mail addresses will be stored in a  password protected and secure Carnegie Mellon University server that is only  available to the investigators of this study. All audio and video will be  stored on password protected and secure servers. Any recording media will be  stored in a locked location.</p>
+<h2 class="style1">Optional Permission</h2>
+        <p>I  understand that the researchers may want to use photographs and short portion  of any video or audio recording for illustrative reasons in presentations of  this work in the classroom, at professional meetings, in public settings, in  publications of the results of this study, and on CDs, DVDs, or relevant websites  on the internet to promote the work of Carnegie Mellon University&rsquo;s  TechBridgeWorld. If I give permission, I understand that any contractors  employed to take or assemble the recordings can use them as examples of work  they have done. </p>
+        <form method="post" action="http://server1.tbw.ri.cmu.edu/online_form_processing/assistiverobots/process_consent_form.php" name="consent" onSubmit="return check_consent(this);">
+          <p>By selecting &ldquo;YES&rdquo;, I give my permission to use photographs or  other recordings in which I appear or am heard, provided that my name will not  appear.
+            <input type="radio" name="optional_permission_to_use_media" value="yes">
+            Yes
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="optional_permission_to_use_media" value="no">
+            No
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="optional_permission_to_use_media" value="nothing_selected" disabled="disabled" style="display:none;" CHECKED>
+            <br>
+          </p>            
+
+          <h2 class="style1">Rights</h2>
+          <p>Your participation is voluntary. You are free to stop your participation at  any point. Refusal to participate or  withdrawal of your consent or discontinued participation in the study will not  result in any penalty or loss of benefits or rights to which you might otherwise  be entitled. The Principal Investigator  may at his/her discretion remove you from the study for any of a number of  reasons. In such an event, you will not  suffer any penalty or loss of benefits or rights which you might otherwise be  entitled.</p>
+<h2 class="style1">Right to Ask Questions & Contact Information</h2>
+          <p>If you have any questions about this  study, you should feel free to ask them by contacting the Principal  Investigator now:</p>
+          <p>M.  Bernardine Dias, Ph.D., Associate Research Professor<br>
+            Robotics  Institute<br>
+            Newell-Simon Hall 2105<br>
+            Carnegie  Mellon University<br>
+            Pittsburgh,  PA, 15213<br>
+            +1-412-268-1289<br>
+          <a href="mailto:mbdias@ri.cmu.edu" target="_blank">mbdias@ri.cmu.edu</a></p>
+<p>If you have questions later, desire  additional information, or wish to withdraw your participation please contact   Co-Investigator <strong>Ermine A. Teves</strong>. 
+          Email: <a href="mailto:eteves@cs.cmu.edu" target="_blank">eteves@cs.cmu.edu</a>. Phone: +1-412-268-1289. </p>
+          <p>If you have questions pertaining to your rights as a  research participant; or to report objections to this study, you should contact  the Office of Research integrity and Compliance at Carnegie Mellon University. Email: <a href="mailto:irb-review@andrew.cmu.edu" target="_blank">irb-review@andrew.cmu.edu</a>. Phone: +1-412-268-1901  or +1-412-268-5460.</p>
+<p>
+          The Carnegie Mellon University Institutional Review Board (IRB) has approved the use of human participants for this study.          </p>
+<h2 class="style1">Voluntary Participation</h2>
+          <p>Your participation in this research is voluntary. You may discontinue participation at any time  during the research activity.</p>
+          <p class="style1">First Name &nbsp;&nbsp;&nbsp;
+          <input type="text" name="firstname" size="30">
+          <br>
+          Last Name &nbsp;&nbsp;&nbsp;
+          <input type="text" name="lastname" size="30">
+          <br>
+          Affiliation &nbsp;&nbsp;&nbsp;
+          <input type="text" name="affiliation" size="30">
+          <br>
+          Email Address &nbsp;&nbsp;&nbsp;
+          <input type="text" name="email" size="50">
+          <br>
+          <br>
+          I am age 18 or older.
+          <input type="radio" name="is_of_age" value="yes">
+          Yes
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="is_of_age" value="no" CHECKED>
+          No <br>
+          <br>
+          I have read and understand the information above.
+          <input type="radio" name="understood_info" value="yes">
+          Yes
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="understood_info" value="no" CHECKED>
+          No <br>
+          <br>
+          I want to participate in this research and continue with the activity.
+          <input type="radio" name="wants_to_participate" value="yes">
+          Yes
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="wants_to_participate" value="no" CHECKED>
+          No <br>
+          <br>
+          <input type="submit" style="width:150px" value="Submit">
+        </p>
+        </form>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <title>Assistive Robots | Media</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="title" content="Web site" />
+    <meta name="description" content="Site description here" />
+    <meta name="keywords" content="keywords here" />
+    <meta name="language" content="en" />
+    <meta name="subject" content="Site subject here" />
+    <meta name="robots" content="All" />
+    <meta name="copyright" content="Your company" />
+    <meta name="abstract" content="Site description here" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <link id="theme" rel="stylesheet" type="text/css" href="style.css" title="theme" />
+
+    <!-- Scripts and CSS used for lightbox -->
+    <script type="text/javascript" src="scripts/prototype.js"></script>
+    <script type="text/javascript" src="scripts/scriptaculous.js?load=effects,builder"></script>
+    <script type="text/javascript" src="scripts/lightbox.js"></script>
+    <link rel="stylesheet" href="lightbox.css" type="text/css" media="screen" />
+
+    <!-- Javascript function used to create lightbox albums on window load (see albums.js for details) -->
+    <script type="text/javascript" src="scripts/albums.js"></script>
+    <script type='text/javascript'>
+      var oldload = window.onload || function(){};
+      window.onload = function() {
+	      oldload.apply(window, arguments); /* This makes sure we don't override another onload function */
+      
+        /* The albums will be loaded in the order they appear here! */
+        create_album(/* folder name */ "Expert_Interaction_Sighted", 
+                     /* album title */ "Expert Interaction - Sighted", 
+                     /* number of photos in album*/ 10, 
+                     /* number of digits in filenames (eg: image_001.jpg has 3 digits)*/ 3,
+                     new Array(/* Captions for each photo can be entered below (make sure to add a line for each photo!)*/
+                               /* 1 */"Researcher familiarizes participant with the Baxter research robot.",
+                               /* 2 */"Participant interacts with Baxter's wrist.",
+                               /* 3 */"Participant moves Baxter's arm.",
+                               /* 4 */"Researcher explains Baxter's gripper functionality.",
+							   /* 5 */"Participant tries moving Baxter's arm.",
+							   /* 6 */"Participant tries out Baxter's gripper with a cassette tape case.",
+							   /* 7 */"Participant tries out Baxter's suction with a cassette tape case.",
+							   /* 8 */"Participant tries moving Baxter's arm.",
+							   /* 9 */"Participant tries out Baxter's gripper with a cassette tape case.",
+                               /* 10 */"Participant tries out Baxter's suction with a cassette tape case."
+                               )
+                     );
+
+      }
+    </script>
+
+    <!-- Javascript function used to swap in/out movies -->
+    <script type='text/javascript'>
+      function swapMovie(id) {
+	      var string = '<object width="400" height="304"><param name="movie" value="http://www.youtube.com/v/MOVIEID&hl=en&fs=1"></param><param name="allowFullScreen" value="true"></param><embed src="http://www.youtube.com/v/MOVIEID&hl=en&fs=1" type="application/x-shockwave-flash" allowfullscreen="true" width="400" height="304"></embed></object>'.replace("MOVIEID", id).replace("MOVIEID", id);
+      
+	      document.getElementById('movie').innerHTML = string;
+      }
+    </script>
+
+  </head>
+  <body> 
+    <div id="wrapper"> 
+      <div id="bg"> 
+        <div id="header"></div>  
+        <div id="page"> 
+          <div id="container"> 
+            <!-- banner -->  
+            <div id="banner"></div>  
+            <!-- end banner -->  
+            <!-- horizontal navigation -->  
+            <div id="nav1"> 
+              <ul>
+                <li>
+                  <a href="index.html" shape="rect">Home</a>                </li>
+                <li>
+                  <a href="research.html" shape="rect">Research</a>                </li>
+                <li>
+                  <a href="team.html" shape="rect">Team</a>                </li>
+                <li>
+                  <a href="publications.html" shape="rect">PUblications</a>                </li>
+                <li id="current" style="border:none">
+                  <a href="media.html" shape="rect">Media</a>                </li>
+              </ul> 
+            </div>  
+            <!-- end horizontal navigation -->  
+            <!--  content -->  
+            <div id="content"> 
+              <div id="center"> 
+                <h1><a name="Top" id="Top"></a>Media</h1>
+                <p>Click on the following links for media coverage of our work and its impact:</p>
+                <div id="large_bullets">
+                  <ul>
+                    <li><a href="#Media">Media Kit</a></li>
+                    <li><a href="#News">In the News</a></li>
+                    <li><a href="#Photos">Photo Gallery</a></li>
+                    <li><a href="#Videos">Video Gallery</a></li>
+                  </ul>
+                </div>
+                <h2><a name="Media" id="Videos2"></a>Media Kit</h2>
+                <table width="500" border="0">
+                  <tr>
+                    <td width="139"><div align="center"><a href="publications/media_kit_march_2015.pdf" target="_blank"><img src="publications/media_kit_march_2015.jpg" alt="media kits March 2015" width="130" hspace="10" vspace="5" align="absmiddle" class="no_border" /></a></div></td>
+                    <td width="140">&nbsp;</td>
+                    <td width="141">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td><div align="center">March 2015</div></td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                </table>
+                <h2><a name="News" id="Photos2"></a>In the News</h2>
+                	<p>Check back to for news updates featuring this project!</p>
+                <!--
+                <ul>
+                  <li><a href="http://www.post-gazette.com/stories/business/news/navpal-helps-blind-to-navigate-world-phone-app-for-visually-impaired-632935/?p=0" target="_blank">NavPal helps blind to navigate world</a><br />
+                  Pittsburgh Post-Gazette, April 2012</li>
+                  <li><a href="http://vimeo.com/60673199" target="_blank">Video feature on NavPal</a><br />
+                    Accessible Pittsburgh, March 2013
+                  </li>
+                </ul>
+                -->
+                <h2><a name="Photos" id="Photos"></a>Photo Gallery                
+                
+                <div align="center">
+                  <table width="470" border="0" cellspacing="5" cellpadding="2">
+                   <tr>
+                      <td>
+                        <div align="center">
+                          <a href="#Expert_Interaction_Sighted">
+                            <img src="images/album_covers/Expert_Interaction_Sighted.JPG" alt="Expert Interaction - Sighted" width="150" height="113" />
+                          </a>
+                        </div>
+                      </td>
+                      <td>
+                        <div align="center"></div>
+                      </td>
+                      <td>
+                        <div align="center"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><div align="center"><a href="#Expert_Interaction_Sighted">Expert Interaction - Sighted</a></div></td>
+                      <td><div align="center"></div></td>
+                      <td><div align="center"></div></td>
+                    </tr>
+                  </table>
+                </div>
+                <div id='photos'>
+                  <!-- The window.onload function will fill in this div with the photo albums! -->
+		            </div>
+                <h2><a name="Videos" id="Videos"></a>Video Gallery</h2>
+                <p> Check back for video updates for this project!</p>
+                <!--
+                <div style='color:#999; float:left; margin-top: 10px; text-align:center; width:275px'>
+                  <p>Select a video below to view. Videos best viewed on Mozilla Firefox, Google Chrome or Internet Explorer.</p>
+                </div>
+                
+                <div id='movie_container'>
+		              <div id='movie'>
+			              <img src='images/filmstrip.gif' style='border:solid 1px #aaa'/>
+		              </div>
+		              <div id='movieNav'>
+                    <br />
+	                  <a onClick='swapMovie("82o3ShLXaVQ");'>Adding annotations to NavPal visual interface</a><br /><br />
+	                  <a onClick='swapMovie("qCK5IwSnx8w");'>Adding annotations to the visual interface</a><br /><br />
+			              <a onClick='swapMovie("KWNOmABRh8c");'>
+<br />
+		              </div>
+                </div>
+-->
+              </div><!-- End of center div -->
+              <div id="right"> 
+                <div id="sidebar">
+                  <div id="sidebar_cmu_logo" class="rounded_border">
+                    <h4 align="center">
+                      <a href="http://www.cmu.edu" target="_blank">
+                        <img src="images/Logos/Carnegie_Mellon_sm.png" alt="Carnegie Mellon University" width="175" height="27" />
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="sidebar_research_labs" class="rounded_border">
+                    <h3 align="center">                    Research Labs:</h3>
+                    <h4 align="center">
+                      <a href="http://www.techbridgeworld.org" target="_blank">
+                        <img src="images/Logos/TechBridgeWorld_sm.jpg" alt="TechBridgeWorld" width="150" height="100" />
+                      </a>
+                    </h4>
+                    <h4 align="center">
+                    <a href="http://www.rercapt.org/" target="_blank"> 
+                    	<img src="images/Logos/RERCAPT_logo.jpg" alt="RERCAPT" width="150" height="130" longdesc="http://www.rercapt.org/" />
+                        </a>
+                        </h4>
+                  </div>
+                  <div id="sidebar_sponsors" class="rounded_border">
+                    <h3 align="center">Sponsor: </h3>
+                    <h4 align="center">
+                      <a href="http://www.nsf.gov/" target="_blank">
+                        <img src="images/Logos/NSF_Logo_Web_sm.jpg" alt="National Science Foundation" width="170" height="38" longdesc="http://www.nsf.gov/" />
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="sidebar_partners" class= "rounded_border">
+                  <h3 align="center">Partners: </h3>
+                   <h4 align="center">
+                   	<a href="http://www.wpsbc.org/" target="_blank">
+                    	<img src="images/Logos/WPSBC_Logo_Web_sm.jpg" alt="Western Pennsylvania School for Blind Children" width="170" height="40" longdesc="http://www.rethinkrobotics.com/" />
+                    </a>
+                   </h4>
+                   <h4 align="center">
+                   	<a href="http://www.bvrspittsburgh.org/" target="_blank">
+                    	<img src="images/Logos/BVRS_Logo_Web_sm.jpg" alt="Blind and Vision Rehabilitation Services of Pittsburgh" width="170" height="40" longdesc="http://www.bvrspittsburgh.org/" />
+                    </a>
+                   </h4>
+                  </div>
+                </div> 
+              </div>  
+              <div class="clear" style="height:40px"></div> 
+            </div>  
+            <!-- end content --> 
+          </div>  
+          <!-- end container --> 
+        </div>  
+        <div id="footerWrapper"> 
+          <div id="footer">
+            <p style="padding-top:10px">
+              <!--
+                  THIS TEMPLATE IS FREE IF YOU DO NOT REMOVE OR MODIFY THE FOLLOWING LINK. 
+                  TO REMOVE THIS LINK, PLEASE MAKE A $10 DONATION AT www.dotemplate.com.
+                -->
+              <a href="http://www.techbridgeworld.org/contact/" target="_blank">Contact us</a> | ©2013 <a href="http://www.cmu.edu" target="_blank">Carnegie Mellon University</a> |                  Web template created with <a href="http://www.dotemplate.com" target="_blank">doTemplate</a></p>
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+    <!-- twitter follow badge by go2web20 -->
+<script src='http://www.go2web20.net/twitterfollowbadge/1.0/badge.js' type='text/javascript'></script><script type='text/javascript' charset='utf-8'><!--
+tfb.account = 'techbridgeworld';
+tfb.label = 'follow-us';
+tfb.color = '#8fc63d';
+tfb.side = 'r';
+tfb.top = 400;
+tfb.showbadge();
+--></script>
+<!-- end of twitter follow badge -->
+
+  </body>
+</html>
